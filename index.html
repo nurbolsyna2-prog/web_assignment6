@@ -4,11 +4,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment 6</title>
 </head>
 
 <body>
+    <section class="personal-info">
+        <h1>Welcome to My Portfolio</h1>
+        <h2 id="name"> Hello, I'm Nurbolsyn </h2>
+        <p id="headline"> I'm a web developer </p>
+        <p class="intro">I will be happy if you like my website! And also I get 100% for this assignment. </p>
+        <button id="light-btn">Light Mode</button>
+        <button id="dark-btn">Dark Mode</button>
+    </section>
 
+    <section id="about-me ">
+        <h2>About Me</h2>
+        <p> I'm Nurbolsyn, a passionate web developer. I'm from Mongolia, and I love to create amazing web experiences.
+            Now, I'm focusing on improving my skills in frontend and backend development.</p>
+        <p id="status">Learning jQuery. </p>
+        <div id="facts">
+            <ul>
+                <li> I have experience in HTML, CSS, and JavaScript. </li>
+                <li> I am familiar with responsive design principles. </li>
+                <li> I enjoy solving problems and learning new technologies. </li>
+            </ul>
+        </div>
+        <button id="hide-btn">Hide Facts</button>
+        <button id="show-btn">Show Facts</button>
+        <button id="toggle-btn">Toggle Facts</button>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+
+        <img src="pictures\Anime-Scenery-Wallpaper-for-Walls.jpg" alt="Image 1" class="gallery-image">
+        <img src="pictures\images.jpeg" alt="Image 2" class="gallery-image">
+        <img src="pictures\premium_vector-1742668947361-739780396fb6.jpeg" alt="Image 3" class="gallery-image">
+
+        <br>
+        <button id="fade-out-btn">Fade Out</button>
+        <button id="fade-in-btn">Fade In</button>
+        <button id="fade-toggle-btn">Fade Toggle</button>
+
+    </section>
+
+    <section id="favorites">
+        <h2>My Favorites</h2>
+
+        <h3 class="title" id="music-title">My Favorite Music</h3>
+        <div class="panel" id="music-panel">
+            <p> My favorite music is "Follows You" and "500 miles", because it makes me feel cool and confident. </p>
+        </div>
+
+        <h3 class="title" id="movie-title">My Favorite Movie</h3>
+        <div class="panel" id="movie-panel">
+            <p> My favorite movie is "Magnificent Century", because it's a captivating historical drama and I love
+                Hurrem I'm her big fan. </p>
+        </div>
+
+        <h3 class="title" id="subject-title">My Favorite Subject</h3>
+        <div class="panel" id="subject-panel">
+            <p> My favorite subject is English, because it allows me to express myself clearly and creatively. </p>
+        </div>
+
+        <button id="open-all-btn">Open All</button>
+        <button id="close-all-btn">Close All</button>
+    </section>
+
+    <section id="skills">
+        <h2>My Technical Skills</h2>
+
+        <ul id="skill-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>jQuery</li>
+        </ul>
+
+        <input type="text" id="skill-input" placeholder="Enter a new skill">
+        <button id="add-skill-btn">Add Skill</button>
+        <button id="prepend-skill-btn">Prepend Skill</button>
+        <button id="remove-skill-btn">Remove Skill</button>
+    </section>
+
+    <section id="social">
+        <h2>My Social Link</h2>
+
+        <a id="social-link" href="https://github.com/nurbolsyna2-prog" target="_blank">
+            My GitHub and Telegram
+        </a>
+
+        <br>
+
+        <br> <button id="change-link-btn">Change Link</button>
+    </section>
+
+    <section id="form-section">
+        <h2>Contact Form</h2>
+
+        <form>
+            <label for="name-input">Name:</label>
+            <input type="text" id="name-input" placeholder="Your name">
+            <br>
+            <label for="email-input">Email:</label>
+            <input type="email" id="email-input" placeholder="Your email">
+        </form>
+
+        <p>Name: <span id="name-output"></span></p>
+        <p>Email: <span id="email-output"></span></p>
+    </section>
+
+
+
+    <h3>Skill Levels</h3>
+
+    <div class="skill">
+        <span>HTML</span>
+        <div class="bar-bg">
+            <div class="bar" id="bar-html"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>CSS</span>
+        <div class="bar-bg">
+            <div class="bar" id="bar-css"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>JavaScript</span>
+        <div class="bar-bg">
+            <div class="bar" id="bar-js"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>jQuery</span>
+        <div class="bar-bg">
+            <div class="bar" id="bar-jquery"></div>
+        </div>
+    </div>
+    <br>
+    <button id="animate-skills-btn">Animate My Skills</button>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
